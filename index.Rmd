@@ -2,9 +2,11 @@
 title: "Welcome to my website!"
 ---
 
-```{r, echo = F}
+```{r}
 library("ggplot2")
 
 df <- iris
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point()
+ggplot(iris, aes(Petal.Width, Petal.Length, color = Species)) +
+  geom_point() +
+  geom_smooth(method='lm', se = F, color = "black")
 ```
