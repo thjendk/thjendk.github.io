@@ -2,4 +2,7 @@
 title: "Welcome to my website!"
 ---
 
-You're up and running!
+```{r, echo = F}
+df <- iris
+plot(iris$Sepal.Length, iris$Sepal.Width)
+```
