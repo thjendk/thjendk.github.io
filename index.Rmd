@@ -3,6 +3,8 @@ title: "Welcome to my website!"
 ---
 
 ```{r, echo = F}
+library("ggplot2")
+
 df <- iris
-plot(iris$Sepal.Length, iris$Sepal.Width)
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point()
 ```
